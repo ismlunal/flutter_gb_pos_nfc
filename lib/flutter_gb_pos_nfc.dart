@@ -4,10 +4,9 @@ import 'package:flutter/services.dart';
 
 class GBPosNfc {
   static const MethodChannel _channel = MethodChannel('flutter_gb_pos_nfc');
+  static bool process = true;
 
   static Stream<PosNfcData> readCard() async* {
-    bool process = true;
-
     while (process) {
       await Future.delayed(const Duration(seconds: 1));
 
@@ -19,6 +18,10 @@ class GBPosNfc {
         yield cardData;
       }
     }
+  }
+
+  static start() {
+    process = true;
   }
 }
 

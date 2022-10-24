@@ -1,6 +1,6 @@
 name: flutter_gb_pos_nfc
-description: GaziBilisim POS NFC Card Reader
-version: 0.0.1
+description: Uruvo POS NFC Card Reader
+version: 0.0.2
 homepage: https://ismailunal.net
 
 environment:
